@@ -1,8 +1,9 @@
 #include <Wire.h> // Enable this line if using Arduino Uno, Mega, etc.
+//I2C for led readout
 #include "Adafruit_LEDBackpack.h"
 #include "Adafruit_GFX.h"
 //coin sensor floats high, goes low on coin detect
-#define coinHopperPin 2 // Pin for signal from Cube Hopper coin sensor
+const int coinHopperPin = 3; // Pin for signal from Cube Hopper coin sensor
 
 int buttonPin = 8;  // GUI button
 int ledPin = 13;  // 
